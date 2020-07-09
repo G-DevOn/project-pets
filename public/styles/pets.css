@@ -1,0 +1,46 @@
+.cards {
+    width: 95%;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    border-radius: 15px;
+    position: relative;
+}
+
+.pet-image img {
+    height: 100%;
+    width: 350px;
+    border-radius: 15px 0 0 15px;
+}
+
+.pet-info {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.pet-info p {
+    padding: 15px;
+    text-align: center;
+}
+
+.age {
+    margin: 0 auto;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #fff591;
+    border-radius: 20px;
+}
+
+.male {
+    background-color: #d4f3ef;
+}
+
+.female {
+    background-color: #ffeadb;
+}

@@ -1,0 +1,27 @@
+{% extends "layout.njk" %}
+
+
+{% block styles %}
+    <link rel="stylesheet" href="/styles/pets.css">
+{% endblock styles %}
+
+
+{% block content %}
+    <section class="cards">
+        {% for cat in cats %}
+        <div class="card {{cat.gender}}">
+            <div class="pet-image">
+                <img src="{{ cat.catPhoto }}" alt="">
+            </div>
+            <div class="pet-info">
+                <h1>{{ cat.name }}</h1>
+                <p>{{ cat.description }}</p>
+                <div class="age">
+                    <p>Idade</p>
+                    <p class="years">{{ cat.age }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </section>
+{% endblock content %}

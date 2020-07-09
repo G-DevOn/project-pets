@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+        <title>Gatos</title>
+    {% endblock title %}
+
+    <link rel="stylesheet" href="/styles/layout.css">
+    {% block styles %}
+    {% endblock styles %}
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="/assets/logo.png" alt="Logo">
+            </div>
+            <div class="menu">
+                <a class="active" href="http://abrigoanjogabriel.com.br/" target="_blank">Pagina principal</a>
+                <a href="http://abrigoanjogabriel.com.br/apadrinhamento" target="_blank">Apadrinhamento</a>
+                <a href="http://abrigoanjogabriel.com.br/quero-ajudar" target="_blank">Quero Ajudar</a>
+                <a href="http://abrigoanjogabriel.com.br/quero-adotar" target="_blank">Quero Adotar</a>
+                <a href="/pets">Pets</a>
+            </div>
+        </nav>
+    </header>
+
+    {% block content %}
+    {% endblock content %}
+
+    {% block scripts %}
+    {% endblock scripts %}
+</body>
+</html>
